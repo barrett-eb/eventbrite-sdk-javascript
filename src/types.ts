@@ -1,8 +1,10 @@
 export interface SdkConfig {
     token?: string;
     baseUrl?: string;
+    baseApiUrl?: string;
 }
 export interface Sdk {
+    authorize: (client_id: string) => void;
     request: (apiPath: string, options?: RequestInit) => Promise<{}>;
 }
 

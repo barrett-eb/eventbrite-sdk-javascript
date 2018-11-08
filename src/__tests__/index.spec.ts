@@ -42,7 +42,7 @@ describe('request', () => {
     it('makes request to API base url override w/ specified token', async () => {
         const {request} = eventbrite({
             token: MOCK_TOKEN,
-            baseUrl: MOCK_BASE_URL,
+            baseApiUrl: MOCK_BASE_URL,
         });
 
         await expect(request('/users/me/')).resolves.toEqual(

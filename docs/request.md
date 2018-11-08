@@ -28,7 +28,7 @@ The TypeScript function definition of `request()` is:
 
 `request()` accepts the following parameters:
 
-*   `endpoint`: The Eventbrite v3 API endpoint path, such as `/users/me/`. This will be appended to the `baseUrl` defined when [configuring the SDK object](./#configuring-a-sdk-object).
+*   `endpoint`: The Eventbrite v3 API endpoint path, such as `/users/me/`. This will be appended to the `baseApiUrl` defined when [configuring the SDK object](./#configuring-a-sdk-object).
 *   `options`: The request initialization options that [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch) accepts. Your [OAuth token](https://www.eventbrite.com/developer/v3/api_overview/authentication/#ebapi-getting-a-token) will be added to the request `Authorization` header for you. Some additional options you may need to pass in are:
     *   `options.method`: The [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) (e.g. `GET`, `POST`, etc.) for the fetch. Non-`GET` requests add `application/json` as `Content-Type` by default.
     *   `options.mode`: The request mode (e.g. `cors`, `same-origin`, etc.) for the fetch. Defaults the `credentials` option to `include` when `mode` is `cors`. Otherwise the `credentials` default to `same-origin`.

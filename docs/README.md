@@ -46,6 +46,7 @@ const sdk = eventbrite({token: 'OATH_TOKEN_HERE'});
 You can configure the SDK object with the following properties:
 
 *   `token` - The Eventbrite [OAuth token](https://www.eventbrite.com/developer/v3/api_overview/authentication/#ebapi-getting-a-token)
-*   `baseUrl` - The base URL prepending to endpoints when making API requests (defaults to `'https://www.eventbriteapi.com/v3'`). So when using the `'/users/me/'` endpoint, a request would be made to `https://www.eventbriteapi.com/v3/users/me/`. _NOTE: You probably will not need to use this property._
+*   `baseApiUrl` - The base API URL prepending to endpoints when making API requests (defaults to `'https://www.eventbriteapi.com/v3'`). So when using the `'/users/me/'` endpoint, a request would be made to `https://www.eventbriteapi.com/v3/users/me/`. _NOTE: You probably will not need to use this property._
+*   `baseUrl` - The base URL for Eventbrite. This is used for authentication. _NOTE: You probably will not need to use this property._
 
 From then on, you can use `sdk` to make API requests.
